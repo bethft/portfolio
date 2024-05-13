@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio description">
+    <meta name="keywords" content="Portfolio, keywords">
+    <meta name="author" content="My Name">
+    <title>Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
+        <div class="uk-container">
+            <div class="uk-child-width-expand" uk-grid>
+                <!-- LOGO -->
+                <div>
+                    <a href="index.html" class="uk-logo">A Logo</a>
+                </div>
+                <!-- MENU -->
+                <div class="uk-width-1-2">
+                    <nav class="uk-flex uk-flex-center">
+                        <ul id="menu" class="uk-subnav uk-box-shadow-medium" uk-margin>
+                            <li>
+                                <a href="index.html" class="uk-text-emphasis uk-padding-small">Item</a>
+                            </li>
+                            <li>
+                                <a href="index.html#projects" class="uk-text-emphasis k-padding-small">Item</a>
+                            </li>
+                            <li class="uk-active uk-background-default">
+                                <a href="#" class="uk-padding-small">Active</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <article class="uk-section">
+        <div class="uk-container">
+            <h1 class="uk-heading-xlarge">About</h1>
+            <div class="uk-column-1-1@s uk-column-1-2@m">
+                <section>
+                    <div class="uk-width-1-1 uk-overflow-hidden">
+                        <img class="about-img" src="images/projects.png" alt="" uk-scrollspy="cls:uk-animation-fade">
+                    </div>
+                </section>
+                <section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nesciunt. </p>
+                    <p>Consequuntur obcaecati officia sit? Quas quia incidunt, alias voluptatum nisi pariatur
+                        accusantium
+                        tempora animi maxime dicta enim facilis illo. Aliquam!</p>
+                </section>
+            </div>
+        </div>
+
+    </article>
+
+
+    <!-- FOOTER -->
+    <footer class="uk-section uk-background-secondary uk-light">
+        <div class="uk-container">
+            <div uk-grid>
+                <div>
+                    <h1 class="uk-h3"><span uk-icon="icon: happy"></span> My Name</h1>
+                    <p>A short sentence</p>
+                    <ul class="uk-iconnav">
+                        <li><a href="#" class="uk-padding-small" uk-icon="icon: linkedin"></a></li>
+                        <li><a href="#" class="uk-padding-small" uk-icon="icon: github"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

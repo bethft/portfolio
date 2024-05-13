@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio description">
+    <meta name="keywords" content="Portfolio, keywords">
+    <meta name="author" content="My Name">
+    <title>Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
+        <div class="uk-container">
+            <div class="uk-child-width-expand" uk-grid>
+                <!-- LOGO -->
+                <div>
+                    <a href="#" class="uk-logo">A Logo</a>
+                </div>
+                <!-- MENU -->
+                <div class="uk-width-1-2">
+                    <nav class="uk-flex uk-flex-center">
+                        <ul id="menu" class="uk-subnav uk-box-shadow-medium" uk-margin>
+                            <li class="uk-active uk-background-default">
+                                <a href="#" class="uk-padding-small">Active</a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="uk-text-emphasis uk-padding-small">Item</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="uk-text-emphasis k-padding-small">Item</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LANDING -->
+    <section class="uk-section">
+        <div class="uk-height-large">
+            <div class="uk-position-center uk-overlay uk-overlay-default" style="z-index: 1;">
+                <h1 class="uk-heading-xlarge">Hello World</h1>
+                <p class="uk-text-center uk-text-lead">What I Do</p>
+            </div>
+            <div class="uk-position-large uk-position-bottom-center uk-overlay uk-overlay-default">
+                <img src="images/designer.svg" width="200px" alt="" uk-svg="stroke-animation: true">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="uk-section">
+        <div class="uk-container">
+            <div class="uk-flex uk-flex-wrap">
+                <h1 class="uk-width-1-1 uk-heading-xlarge">Selected</h1>
+                <h1 class="uk-width-1-2 uk-flex-last uk-heading-xlarge">Projects</h1>
+                <p class="uk-width-1-2 uk-text-lead">Some short description</p>
+            </div>
+            <div class="uk-child-width-expand@s uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <a class="uk-link-muted uk-link-reset" href="project.html">
+                        <div class="uk-card uk-card-small uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <div class="uk-height-medium uk-overflow-hidden uk-cover-container">
+                                    <img src="images/projects.png" width="1800" height="1200" alt="" uk-cover>
+                                </div>
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Top</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-link-muted uk-link-reset" href="project2.html">
+                        <div class="uk-card uk-card-small uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <div class="uk-height-medium uk-overflow-hidden uk-cover-container">
+                                    <img src="images/onHoverProjet.png" width="1800" height="1200" alt="" uk-cover>
+                                </div>
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Top</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-link-muted uk-link-reset" href="project3.html">
+                        <div class="uk-card uk-card-small uk-card-default uk-card-hover">
+                            <div class="uk-card-media-top">
+                                <div class="uk-height-medium uk-overflow-hidden uk-cover-container">
+                                    <img src="images/designer.svg" width="1800" height="1200" alt="" uk-cover>
+                                </div>
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Top</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- <div uk-grid>
+                <div id="project-images" class="uk-width-1-2 uk-height-medium">
+                    <img id="one" class="uk-width-1-1" src="images/projects.png" alt="" hidden>
+                    <img id="two" class="uk-width-1-1" src="images/onHoverProjet.png" alt="" hidden>
+                    <img id="three" src="images/projects.png" alt="" hidden>
+                </div>
+                <div class="uk-width-1-2" uk-height-match>
+                    <ul class="uk-list uk-list-divider">
+                        <li>
+                            <a href="project.html" class="uk-link-muted uk-text-large"
+                                uk-toggle="target: #one; mode: hover, click; animation: uk-animation-fade" uk-grid>
+                                <span class="uk-width-auto">First</span>
+                                <span class="uk-width-expand uk-flex uk-flex-right"
+                                    uk-icon="icon: arrow-right; ratio: 2"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="project2.html" class="uk-link-muted uk-text-large"
+                                uk-toggle="target: #two; mode: hover; animation: uk-animation-fade" uk-grid>
+                                <span class="uk-width-auto">Second</span>
+                                <span class="uk-width-expand uk-flex uk-flex-right"
+                                    uk-icon="icon: arrow-right; ratio: 2"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-link-muted uk-text-large"
+                                uk-toggle="target: #three; mode: hover; animation: uk-animation-fade" uk-grid>
+                                <span class="uk-width-auto">Third</span>
+                                <span class="uk-width-expand uk-flex uk-flex-right"
+                                    uk-icon="icon: arrow-right; ratio: 2"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        
+        <div class="uk-container">
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="uk-section uk-background-secondary uk-light">
+        <div class="uk-container">
+            <div uk-grid>
+                <div>
+                    <h1 class="uk-h3"><span uk-icon="icon: happy"></span> My Name</h1>
+                    <p>A short sentence</p>
+                    <ul class="uk-iconnav">
+                        <li><a href="#" class="uk-padding-small" uk-icon="icon: linkedin"></a></li>
+                        <li><a href="#" class="uk-padding-small" uk-icon="icon: github"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
