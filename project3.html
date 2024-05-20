@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio description">
-    <meta name="keywords" content="Portfolio, keywords">
-    <meta name="author" content="My Name">
-    <title>Page Title</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="description" content="Welcome to Bethania's UX portfolio">
+    <meta name="keywords" content="Portfolio, UX, Research, Design, Product, Projects">
+    <meta name="author" content="Bethania">
+    <title>Bethania's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -23,20 +22,20 @@
             <div class="uk-child-width-expand" uk-grid>
                 <!-- LOGO -->
                 <div>
-                    <a href="index.html" class="uk-logo">A Logo</a>
+                    <a href="#" class="uk-logo"><img src="/images/logo.png" width="75" ></a>
                 </div>
                 <!-- MENU -->
                 <div class="uk-width-1-2">
                     <nav class="uk-flex uk-flex-center">
                         <ul id="menu" class="uk-subnav uk-box-shadow-medium" uk-margin>
                             <li>
-                                <a href="index.html" class="uk-text-emphasis uk-padding-small">Item</a>
+                                <a href="index.html" class="uk-text-emphasis uk-padding-small">Home</a>
                             </li>
                             <li class="uk-active uk-background-default">
-                                <a href="index.html#projects" class="uk-padding-small">Active</a>
+                                <a href="index.html#projects" class="uk-padding-small">Work</a>
                             </li>
                             <li>
-                                <a href="about.html" class="uk-text-emphasis k-padding-small">Item</a>
+                                <a href="about.html" class="uk-text-emphasis k-padding-small">About</a>
                             </li>
                         </ul>
                     </nav>
@@ -51,7 +50,7 @@
         <!-- HERO IMAGE -->
         <div>
             <div class="uk-height-large uk-width-1-1 uk-overflow-hidden uk-cover-container">
-                <img src="images/projects.png" width="1800" height="1200" alt="" uk-cover>
+                <img src="images/sf.png" width="1800" height="1200" alt="" uk-cover>
             </div>
         </div>
 
@@ -69,13 +68,11 @@
                     </div>
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
-                        <h1 class="uk-article-title">Something something</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto
-                            temporibus placeat
-                            velit
-                            beatae asperiores? Voluptates nesciunt libero ea, obcaecati esse quia
-                            sint debitis maiores
-                            recusandae commodi voluptatem incidunt ducimus.</p>
+                        <h1 class="uk-article-title">About Temptunes</h1>
+                        <p>This project uses Flask and Spotify's API to create a web app that generates
+                            personalized playlists based on real-time weather data. Users can log in with
+                            their Spotify account, view the current weather, and enjoy a curated playlist
+                            that matches the weather's mood.</p>
                         <!-- TABLE -->
                         <table class="uk-table uk-table-divider uk-table uk-table-justify">
                             <thead>
@@ -86,16 +83,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Table Data</td>
-                                    <td>Table Data</td>
+                                    <td>Roles</td>
+                                    <td>Developer</td>
                                 </tr>
                                 <tr>
-                                    <td>Table Data</td>
-                                    <td>Table Data</td>
+                                    <td>Timeline</td>
+                                    <td>3 Weeks </td>
                                 </tr>
                                 <tr>
-                                    <td>Table Data</td>
-                                    <td>Table Data</td>
+                                    <td>Team</td>
+                                    <td>Bethania (me) and Shannon Prasetyo</td>
+                                </tr>
+                                <tr>
+                                    <td>Tools</td>
+                                    <td>Python, CSS, and HTML</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -105,12 +106,130 @@
 
         </section>
 
-        <!-- IMAGE COVER -->
-        <section class="uk-section uk-background-secondary uk-overflow-hidden">
-            <div class="uk-container uk-container-xlarge">
-                <div class="uk-height-large uk-overflow-hidden uk-cover-container">
-                    <img src="images/projects.png" width="1800" height="1200" alt="" uk-cover>
+        <!-- PROJECT SECTION -->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div uk-grid>
+                    <!-- HEADING -->
+                    <div class="uk-width-1-2">
+                        <span>(02)</span>
+                        <h1 class="uk-text-large uk-flex uk-flex-column"">
+                            <span>Research</span>
+                        </h1>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <article class=" uk-article uk-width-1-2">
+                        <h1 class="uk-article-title">Why Make This?</h1>
+                        <p>Our task was to create a website that integrates two APIs.
+                            During our brainstorming session, we discussed how we love
+                            matching different types of music to the weather. However,
+                            this can often be a tedious process since finding the perfect
+                            songs to make a playlist takes time.</p>
+                    </article>
                 </div>
+            </div>
+
+        </section>
+
+         <!-- PROJECT SECTION -->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div uk-grid>
+                    <!-- HEADING -->
+                    <div class="uk-width-1-2">
+                        <span>(03)</span>
+                        <h1 class="uk-text-large uk-flex uk-flex-column"">
+                            <span>Research</span>
+                        </h1>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <article class=" uk-article uk-width-1-2">
+                        <h1 class="uk-article-title">Problem</h1>
+                        <p>In our brainstorming session, we identified a common pain
+                            point: finding a song that reflects the weather
+                            can be time-consuming, sometimes taking up to 10 minutes to find just one
+                            song. Creating a playlist for specific weather can take even longer, and
+                            the repetition of each playlist can get tiresome, often forcing us to create
+                            new ones. This is why we created Temptunes.</p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+         <!-- PROJECT SECTION -->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div uk-grid>
+                    <!-- HEADING -->
+                    <div class="uk-width-1-2">
+                        <span>(04)</span>
+                        <h1 class="uk-text-large uk-flex uk-flex-column"">
+                            <span>Ideate</span>
+                        </h1>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <article class=" uk-article uk-width-1-2">
+                        <h1 class="uk-article-title">What did we do?</h1>
+                        <p>We decided to combine the Spotify and Weather API to create
+                            a personalized playlist for users based on their geographic location.
+                            Using Python (Flask), CSS, and HTML to create Temptunes.</p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+          <!-- PROJECT SECTION -->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div uk-grid>
+                    <!-- HEADING -->
+                    <div class="uk-width-1-2">
+                        <span>(05)</span>
+                        <h1 class="uk-text-large uk-flex uk-flex-column"">
+                            <span>Prototype</span>
+                        </h1>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <article class=" uk-article uk-width-1-2">
+                        <h1 class="uk-article-title">Using the Spotify API</h1>
+                        <p>My partner and I spent time reviewing the Spotify and Weather API
+                            to identify the parts that were needed to implement to create what
+                            we wanted to complete our website. Below is a screenshot of our Python code. </p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+         <!-- PROJECT SECTION -->
+        <section class="uk-section">
+            <div class="uk-container">
+                <div uk-grid>
+                    <!-- HEADING -->
+                    <div class="uk-width-1-2">
+                        <span>(06)</span>
+                        <h1 class="uk-text-large uk-flex uk-flex-column"">
+                            <span>Launch</span>
+                        </h1>
+                    </div>
+                    <!-- DESCRIPTION -->
+                    <article class=" uk-article uk-width-1-2">
+                        <h1 class="uk-article-title">Location Selection</h1>
+                        <p>When brainstorming the user experience for our website,
+                            we decided that the first step should be asking users to
+                            select their location.</p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- IMAGE COVER -->
+        <section class="uk-section-xsmall uk-section-muted">
+            <div class="uk-container uk-flex uk-flex-center">
+                <img src="images/sr.jpg">
             </div>
         </section>
 
@@ -120,86 +239,108 @@
                 <div uk-grid>
                     <!-- HEADING -->
                     <div class="uk-width-1-2">
-                        <span>(01)</span>
+                        <span>(07)</span>
                         <h1 class="uk-text-large uk-flex uk-flex-column"">
-                            <span>Project</span>
-                            <span>Overview</span>
+                            <span>Launch</span>
                         </h1>
                     </div>
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
-                        <h1 class="uk-article-title">Something something</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto
-                            temporibus placeat
-                            velit
-                            beatae asperiores? Voluptates nesciunt libero ea, obcaecati esse quia
-                            sint debitis maiores
-                            recusandae commodi voluptatem incidunt ducimus.</p>
+                        <h1 class="uk-article-title">Get Recommended Songs</h1>
+                        <p>The second step was to simply view the randomly generated playlist.
+                            This playlist would change depending on what location the user entered.</p>
                     </article>
                 </div>
             </div>
 
         </section>
 
-        <!-- IMAGE COVER -->
-        <section class="uk-section uk-background-secondary uk-overflow-hidden">
-            <div class="uk-container uk-container-xlarge">
-                <div class="uk-height-large uk-overflow-hidden uk-cover-container">
-                    <img src="images/onHoverProjet.png" width="1800" height="1200" alt="" uk-cover>
-                </div>
+         <!-- IMAGE COVER -->
+        <section class="uk-section-xsmall uk-section-muted">
+            <div class="uk-container uk-flex uk-flex-center">
+                <img src="images/dis.jpg">
             </div>
         </section>
 
-        <!-- PROJECT SECTION -->
+         <!-- PROJECT SECTION -->
         <section class="uk-section">
             <div class="uk-container">
                 <div uk-grid>
                     <!-- HEADING -->
                     <div class="uk-width-1-2">
-                        <span>(01)</span>
+                        <span>(08)</span>
                         <h1 class="uk-text-large uk-flex uk-flex-column"">
-                            <span>Project</span>
-                            <span>Overview</span>
+                            <span></span>
                         </h1>
                     </div>
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
-                        <h1 class="uk-article-title">Something something</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto
-                            temporibus placeat
-                            velit
-                            beatae asperiores? Voluptates nesciunt libero ea, obcaecati esse quia
-                            sint debitis maiores
-                            recusandae commodi voluptatem incidunt ducimus.</p>
-                        <!-- LIST -->
-                        <h2>List title</h2>
-                        <ul class="uk-list uk-list-bullet">
-                            <li>List item 1</li>
-                            <li>List item 2</li>
-                            <li>List item 3</li>
-                        </ul>
+                        <h1 class="uk-article-title">In Reflection</h1>
+                        <p>This project was challenging as it was our first time applying
+                            what we learned in class to publish a web application using code.
+                            Building Temptunes required hard work and significant time commitment,
+                            but it was also enjoyable. Working with my partner taught us the importance
+                            of communication when translating our design ideas into code. Through this project,
+                            I also became better at understanding code and gained valuable insights into the
+                            development side as a designer.</p>
                     </article>
                 </div>
             </div>
-        </section>
+
+
+
+<!--        &lt;!&ndash; PROJECT SECTION WITH BULLET POINT&ndash;&gt;-->
+<!--        <section class="uk-section">-->
+<!--            <div class="uk-container">-->
+<!--                <div uk-grid>-->
+<!--                    &lt;!&ndash; HEADING &ndash;&gt;-->
+<!--                    <div class="uk-width-1-2">-->
+<!--                        <span>(03)</span>-->
+<!--                        <h1 class="uk-text-large uk-flex uk-flex-column"">-->
+<!--                            <span>Research</span>-->
+<!--                        </h1>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; DESCRIPTION &ndash;&gt;-->
+<!--                    <article class=" uk-article uk-width-1-2">-->
+<!--                        <h1 class="uk-article-title">Problem</h1>-->
+<!--                        <p>In our brainstorming session, we identified a common pain-->
+<!--                            point: finding a song that reflects the weather-->
+<!--                            can be time-consuming, sometimes taking up to 10 minutes to find just one-->
+<!--                            song. Creating a playlist for specific weather can take even longer, and-->
+<!--                            the repetition of each playlist can get tiresome, often forcing us to create-->
+<!--                            new ones. This is why we created Temptunes.</p>-->
+<!--                        &lt;!&ndash; LIST &ndash;&gt;-->
+<!--                        <h2>List title</h2>-->
+<!--                        <ul class="uk-list uk-list-bullet">-->
+<!--                            <li>List item 1</li>-->
+<!--                            <li>List item 2</li>-->
+<!--                            <li>List item 3</li>-->
+<!--                        </ul>-->
+<!--                    </article>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
 
     </section>
 
-    <!-- FOOTER -->
+   <!-- FOOTER -->
     <footer class="uk-section uk-background-secondary uk-light">
         <div class="uk-container">
             <div uk-grid>
                 <div>
-                    <h1 class="uk-h3"><span uk-icon="icon: happy"></span> My Name</h1>
-                    <p>A short sentence</p>
+                    <h1 class="uk-h3"><span uk-icon="icon: happy"></span> Bethania</h1>
+                    <p>I craft innovative digital experiences from raw ideas,
+                        weaving creativity and functionality into seamless user interactions.</p>
                     <ul class="uk-iconnav">
-                        <li><a href="#" class="uk-padding-small" uk-icon="icon: linkedin"></a></li>
-                        <li><a href="#" class="uk-padding-small" uk-icon="icon: github"></a></li>
+
+                        <li><a href="https://www.linkedin.com/in/bethaniaft" target="_blank" rel="noopener noreferrer" class="uk-padding-small" uk-icon="icon: linkedin"></a></li>
+                        <li><a href="https://github.com/bethft" target="_blank" rel="noopener noreferrer" class="uk-padding-small" uk-icon="icon: github"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 
 </html>
