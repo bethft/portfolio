@@ -25,6 +25,19 @@ body {
     padding-right: 0.5rem;
 }
 
+nav .uk-navbar-nav li a {
+    color: #333;
+}
+
+nav .uk-navbar-nav li a.active {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+nav .uk-navbar-nav li a:hover {
+    color: #777;
+}
+
 /* LANDING SECTION */
 
 /* #my-name {
@@ -38,9 +51,70 @@ body {
     transform: translate(-50%, -40%);
 }
 
+.design-role {
+    display: inline-block;
+    opacity: 0;
+    animation: slideInFromBottom 2500ms ease-in forwards;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.animate-slide-out {
+    display: inline-block;
+    opacity: 1;
+    animation: slideOutToTop 600ms ease-out forwards;
+}
+
+@keyframes slideOutToTop {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.animate-slide-in {
+    display: inline-block;
+    opacity: 0;
+    animation: slideInFromBottom 1800ms ease-out forwards;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (width >= 950px) {
     .multi-bg {
-        background-image: url(../images/cherry_tree.svg), url(../images/petals.svg);
+        background-image: url(../images/cherry_tree2.svg), url(../images/petals.svg);
         background-repeat: no-repeat;
         background-position:
             center right,

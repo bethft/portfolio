@@ -17,28 +17,18 @@
 
 <body>
     <!-- NAVIGATION -->
-    <nav class="uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-margin-small-top">
         <div class="uk-container">
-            <div class="uk-child-width-expand" uk-grid>
-                <!-- LOGO -->
-                <div class="uk-width-1-4 uk-width-1-3@m">
-                    <a href="index.html" class="uk-logo"><img src="images/flower.svg" width="75" ></a>
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="index.html" class="uk-logo" aria-label="Home"><img src="images/flower.svg" width="75" ></a>
                 </div>
-                <!-- MENU -->
-                <div class="uk-width-3-4 uk-width-2-3@m uk-padding-remove@m">
-                    <nav class="uk-flex">
-                        <ul id="menu" class="uk-subnav uk-flex-nowrap uk-box-shadow-medium">
-                            <li>
-                                <a href="index.html" class="uk-padding-small">Home</a>
-                            </li>
-                            <li class="uk-active uk-background-default">
-                                <a href="index.html#projects" class="uk-text-emphasis uk-padding-small">Work</a>
-                            </li>
-                            <li>
-                                <a href="about.html" class="uk-text-emphasis uk-padding-small">About</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="#projects" class="active" >Work</a></li>
+                        <li><a href="about.html" >About</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -68,18 +58,19 @@
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
                         <h1 class="uk-article-title">About Eat Together!</h1>
-                        <p>Eat Together! It is a student-to-student start-up aimed to match students,
-                            rather than using a swipe method it matches students based on similar
-                            interests/hobbies and schedules. The app aims to get students to eat a meal
-                            together to create new friendships. Students can select events listed that
-                            have been posted by the event holder and can decide whether they would like
-                            to join based on the time availability and restaurant location.
+                        <p>
+                            Eat Together! It is a student-to-student start-up aimed to match students,
+                            rather than using a swipe method it matches students based on similar interests/hobbies
+                            and schedules. The app aims to get students to eat a meal together to create new
+                            friendships. Students can select events listed that have been posted by the event
+                            holder and can decide whether they would like to join based on the time availability
+                            and restaurant location.
                         </p>
                         <!-- TABLE -->
                         <table class="uk-table uk-table-divider uk-table uk-table-justify">
                             <thead>
                                 <tr>
-                                    <th class="uk-table-expand">Table Heading</th>
+<!--                                    <th class="uk-table-expand">Table Heading</th>-->
                                     <th class="uk-table-shrink"></th>
                                 </tr>
                             </thead>
@@ -123,9 +114,9 @@
                         <h1 class="uk-article-title">What Was My Project?</h1>
                         <p>
                             Our team's project aimed to facilitate bonding in new social situations by
-                            developing a "would you rather" game feature. This game provides thought
-                            provoking questions with hypothetical scenarios that spark deep discussions
-                            that can create a bond with new acquaintances.
+                            developing a "would you rather" game feature. This game provides thought provoking
+                            questions with hypothetical scenarios that spark deep discussions that can create
+                            a bond with new acquaintances.
                         </p>
                     </article>
                 </div>
@@ -170,11 +161,12 @@
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
                         <h1 class="uk-article-title">Problem</h1>
-                        <p>In the current version of Eat Together, there's no feature for students to
-                            break the ice or engage in fun activities to form meaningful bonds with new
-                            peers during events. Presently, the app solely facilitates event creation and
-                            sign-ups. With this new feature, students can dine together and also
-                            participate in engaging questions!
+                        <p>
+                            The previous version of Eat Together did not have a feature that allowed users to
+                            engage with one another when they first met. The app solely facilitated event creation
+                            and sign-ups. Therefore, our goal was to add icebreakers and activities that could help
+                            create meaningful bonds. With the addition of this new feature, student users could dine
+                            together but also have an activity to help guide conversations that go beyond small talk.
                         </p>
                     </article>
                 </div>
@@ -195,16 +187,24 @@
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
                          <h1 class="uk-article-title">How Might We</h1>
-                        <p>How might we design a captivating “Would you rather” game that not only
-                            fosters comfort but also ignites joy during mealtime gatherings with other
-                            students?
+                        <p>
+                            How might we design a captivating “Would you rather” game that not only fosters
+                            comfort but also ignites joy during mealtime gatherings with other students?
+                            <p>
+                                <b> Conflict ⚠️: </b>
+                            </p>
+                            <p>
+                                The organization had very rigid design guidelines that we needed to incorporate
+                                while designing our game features. Additionally, as designers we received very
+                                little details about why this feature was chosen or what other solutions were considered.
+                            </p>
                         </p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- PROJECT SECTION -->
+         <!-- PROJECT SECTION -->
         <section class="uk-section">
             <div class="uk-container">
                 <div uk-grid>
@@ -212,10 +212,15 @@
                     <div class="uk-width-1-2">
                         <span>(06)</span>
                         <h1 class="uk-text-large uk-flex uk-flex-column"">
-                            <span>Research questions</span>
+                            <span>Empathize</span>
                         </h1>
                     </div>
-                    <!-- LIST -->
+                    <!-- DESCRIPTION -->
+                    <article class=" uk-article uk-width-1-2">
+                         <h1
+                                 class="uk-article-title">Research questions
+                         </h1>
+                         <!-- LIST -->
                     <ul class="uk-list uk-list-bullet">
                         <li>What are the strengths/weaknesses of existing "would you rather" games or
                             similar icebreaker apps?</li>
@@ -225,6 +230,7 @@
                             rather questions (i.e. should questions be humorous, thought-provoking,
                             serious, etc.)?</li>
                     </ul>
+                    </article>
                 </div>
             </div>
         </section>
@@ -270,11 +276,28 @@
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
                         <h1 class="uk-article-title">Mid-Fidelity</h1>
-                        <p>Prior to starting the game, users will receive a brief written guideline to familiarize new users with the new feature. We've incorporated a timer to create a sense of urgency in selecting answers, enhancing excitement. If users require more time, the event holder can extend the timer by 30 seconds. Additionally, we've included a feature that displays the number of users who have responded to each question.
-
-                            Once users are ready to begin the game, the screen will present the question along with two options, allowing users to choose the one they resonate with the most. Upon completing their selection, they will be seamlessly directed to a waiting screen, where they can actively monitor the number of participants in the event who have yet to respond.
-
+                        <p>
+                            Prior to starting the game, users will receive a brief written guideline
+                            to familiarize new users with the new feature. We've incorporated a timer
+                            to create a sense of urgency in selecting answers, enhancing excitement.
+                            If users require more time, the event holder can extend the timer by 30 seconds.
+                            Additionally, we've included a feature that displays the number of users who
+                            have responded to each question. Once users are ready to begin the game,
+                            the screen will present the question along with two options, allowing users
+                            to choose the one they resonate with the most. Upon completing their selection,
+                            they will be seamlessly directed to a waiting screen, where they can actively
+                            monitor the number of participants in the event who have yet to respond.
                         </p>
+                         <p>
+                            <b> Design conflict ⚠️: </b>
+                         </p>
+                         <p>
+                             Our team stumbled onto an issue when creating the design of our question page.
+                             More specifically, we had to deeply consider how we could create a style that
+                             portrayed a fun/engaging feeling that would pair well with the existing Eat Together
+                             style guidelines. As we designed we had to request extra time to discuss this with users
+                             to find a solution that provided the most coherent design.
+                         </p>
                     </article>
                 </div>
             </div>
@@ -302,10 +325,18 @@
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
                          <h1 class="uk-article-title">User Testing</h1>
-                        <p>During user testing, we found that certain features lacked clarity. Users reported that the "add time" feature in the game had no visible countdown, making it difficult for them to gauge the remaining time accurately. Additionally, users found the "add time" prompt unclear, questioning the duration of time added. The initial screen did present the prompt in a clear enough manner. Users often overlooked the feature guidelines, leading to confusion.
-
-                            Users expressed a desire to see the total number of questions in the game and track their progress. They reported confusion and difficulty in finding an exit option when they wanted to stop playing. Additionally, users were unsure if their responses were successfully submitted and wished to have visibility on the remaining time before the next question.
-
+                        <p>
+                            During user testing, we found that certain features lacked clarity.
+                            Users reported that the "add time" feature in the game had no visible
+                            countdown, making it difficult for them to gauge the remaining time
+                            accurately. Additionally, users found the "add time" prompt unclear,
+                            questioning the duration of time added. Users often had trouble finding
+                            the feature guidelines, leading to confusion. Users expressed a
+                            desire to see the total number of questions in the game and track
+                            their progress. They reported confusion and difficulty in finding an
+                            exit option when they wanted to stop playing. Additionally, users were
+                            unsure if their responses were successfully submitted and wished to have
+                            visibility on the remaining time before the next question.
                         </p>
                     </article>
                 </div>
@@ -326,18 +357,52 @@
                     <!-- DESCRIPTION -->
                     <article class=" uk-article uk-width-1-2">
                         <h1 class="uk-article-title">High Fidelity</h1>
-                        <p>User testing provided valuable insights that guided revisions to our mid-fidelity wireframes. Based on user feedback, we made the following changes:
+                        <p>
+                            User testing provided valuable insights that guided revisions
+                            to our mid-fidelity wireframes. Based on user feedback, we made
+                            the following changes:
                         </p>
                         <!-- LIST -->
                         <ul class="uk-list uk-list-bullet">
                             <li>Provided a more detailed tutorial within the game interface. </li>
-                            <li>The timer features a countdown displayed numerically, alongside an additional button indicating the amount of time that can be added.</li>
-                            <li>For clarity, labels were added to the timer and response options, helping users understand each feature's functionality.</li>
-                            <li>We introduced an "Exit Game" button, allowing users to easily leave the game at any point without hassle.</li>
-                            <li>A question tracker has been implemented, enabling users to track their
-                                progress.</li>
-                            <li>The game page layout was updated with two separate cards</li>
+                            <li>The timer features a countdown displayed numerically, alongside
+                                an additional button indicating the amount of time that can be added.</li>
+                            <li>For clarity, labels were added to the timer and response options,
+                                helping users understand each feature's functionality.</li>
+                            <li>We introduced an "Exit Game" button, allowing users to easily
+                                leave the game at any point without hassle.</li>
+                            <li>A question tracker has been implemented, enabling users to track their progress.</li>
+                            <li>The game page layout was updated with two separate cards.</li>
+                            <li>Updated the would you rather question to resemble more of a
+                                rectangular game card to white space. </li>
                         </ul>
+                        <p>
+                            <b> Design conflict ⚠️ </b>
+                        </p>
+                        <p>
+                             There was a large amount of collaboration and planning with the developer
+                             team to find what areas could not be implemented from the original design
+                             handoff since there were time and technical constraints that prevented every
+                             feature to be implemented. These largely involved the page navigation.
+                             Eventually after many back and forth discussions we were able to find
+                             tradeoffs that satisfied both developers and designers.
+                        </p>
+                         <p>
+                            <h2> Try it now!️ </h2>
+                        </p>
+
+                        <div class="uk-container uk-flex uk-flex-start">
+                            <a href="https://apps.apple.com/us/app/eat-together/id6443467064" aria-label="App Store">
+                                <img src="images/as.svg">
+                            </a>
+                        </div>
+<!--                        <a class="uk-button uk-button-primary"-->
+<!--                           href="https://apps.apple.com/us/app/eat-together/id6443467064">-->
+<!--                            App Store-->
+<!--                        </a>-->
+<!--                        <a class="uk-button uk-button-primary"-->
+<!--                           href="https://apps.apple.com/us/app/eat-together/id6443467064">Google Play-->
+<!--                        </a>-->
                     </article>
                 </div>
             </div>
@@ -363,7 +428,19 @@
                         </div>
                         <!-- DESCRIPTION -->
                         <article class=" uk-article uk-width-1-2">
-                            <p>Throughout this project, I gained invaluable experience collaborating with individuals from diverse academic backgrounds, each bringing a unique approach to design. This experience has significantly enhanced my ability to collaborate effectively within a team. I was surprised by the pace at which we had to develop the UX/UI content, which initially felt rushed. However, I quickly adapted to meet the company's deadlines and requirements, realizing my capacity to thrive under pressure and accommodate organizational needs efficiently.  If I were to redo this project I would aim to incorporate more user testing into our design process to ensure a stronger final product. Unfortunately, time constraints prevented us from conducting more extensive user testing in this project. Working with developers, project managers and other UX designers was rewarding, and I look forward to similar opportunities in the future.
+                            <p>
+                                Throughout this project, I gained invaluable experience collaborating with
+                                individuals from diverse academic backgrounds, each bringing a unique approach to design.
+                                This experience has significantly enhanced my ability to collaborate effectively within
+                                a team. It also made me more creative as I was able to work with an established design
+                                guideline to get new ideas. I was surprised by the pace at which we had to develop the
+                                UX/UI content, which initially felt rushed. However, I quickly adapted to meet
+                                the company's deadlines and requirements, realizing my capacity to thrive under pressure
+                                and accommodate organizational needs efficiently. If I were to redo this project I would
+                                aim to incorporate more user testing into our design process to ensure a stronger final
+                                product. Unfortunately, time constraints prevented us from conducting more extensive user
+                                testing in this project. Working with developers, project managers and other UX designers
+                                was rewarding, and I look forward to similar opportunities in the future.
                             </p>
                         </article>
                     </div>
